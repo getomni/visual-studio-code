@@ -1,0 +1,6 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "[yaml]": {
+        "editor.renderWhitespace": "boundary",
+    }
+}
