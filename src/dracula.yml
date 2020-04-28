@@ -2,51 +2,52 @@ name: Omni
 author: Rocketseat
 maintainers:
   - Diego Fernandes <diego.schell.f@gmail.com>
+  - Luke Morales <lukemorales@live.com>
 semanticClass: theme.omni
 omni:
   base:
-    - &BG        '#191623'
-    - &FG        '#E1E1E6'
-    - &SELECTION '#41414D'
-    - &COMMENT   '#483C67'
-    - &CYAN      '#B7A1FE'
-    - &GREEN     '#80E38F'
-    - &ORANGE    '#E89E64'
-    - &PINK      '#FF79C6'
-    - &PURPLE    '#78D1E1'
-    - &RED       '#E96379'
-    - &YELLOW    '#DCD365'
+    - &BG                   '#191622'
+    - &FG                   '#E1E1E6'
+    - &SELECTION            '#41414D'
+    - &COMMENT              '#483C67'
+    - &CYAN                 '#988bc7'
+    - &GREEN                '#67e480'
+    - &ORANGE               '#E89E64'
+    - &PINK                 '#FF79C6'
+    - &PURPLE               '#78D1E1'
+    - &RED                  '#E96379'
+    - &YELLOW               '#e7de79'
   ansi:
-    - &COLOR0        '#21222C'
-    - &COLOR1        '#FF5555'
-    - &COLOR2        '#50FA7B'
-    - &COLOR3        '#F1FA8C'
-    - &COLOR4        '#BD93F9'
-    - &COLOR5        '#FF79C6'
-    - &COLOR6        '#8BE9FD'
-    - &COLOR7        '#F8F8F2'
-    - &COLOR8        '#6272A4'
-    - &COLOR9        '#FF6E6E'
-    - &COLOR10       '#69FF94'
-    - &COLOR11       '#FFFFA5'
-    - &COLOR12       '#D6ACFF'
-    - &COLOR13       '#FF92DF'
-    - &COLOR14       '#A4FFFF'
-    - &COLOR15       '#FFFFFF'
+    - &COLOR0               '#191622'
+    - &COLOR1               '#FF5555'
+    - &COLOR2               '#50FA7B'
+    - &COLOR3               '#F1FA8C'
+    - &COLOR4               '#BD93F9'
+    - &COLOR5               '#FF79C6'
+    - &COLOR6               '#8BE9FD'
+    - &COLOR7               '#F8F8F2'
+    - &COLOR8               '#6272A4'
+    - &COLOR9               '#FF6E6E'
+    - &COLOR10              '#69FF94'
+    - &COLOR11              '#FFFFA5'
+    - &COLOR12              '#D6ACFF'
+    - &COLOR13              '#FF92DF'
+    - &COLOR14              '#A4FFFF'
+    - &COLOR15              '#FFFFFF'
   brightOther:
     # Temporary (awaiting fix)
-    - &TEMP_QUOTES          '#DCD365'
+    - &TEMP_QUOTES          '#e7de79'
     - &TEMP_PROPERTY_QUOTES '#7159C1'
   other:
-    - &LineHighlight '#44475A75'
-    - &NonText       '#FFFFFF1A'
-    - &WHITE         '#E1E1E6'
-    - &TAB_DROP_BG   '#44475A70'
+    - &LineHighlight        '#44475A75'
+    - &NonText              '#FFFFFF1A'
+    - &WHITE                '#E1E1E6'
+    - &TAB_DROP_BG          '#44475A70'
     # UI Variants
-    - &BGLighter     '#202024'
-    - &BGLight       '#201B2D' # HSV (230   , 25.71, 27.45)
-    - &BGDark        '#13111B' # HSV (234.55, 25   , 17.25)
-    - &BGDarker      '#15121E' # HSV (234.55, 25   , 13   )
+    - &BGLighter            '#202024'
+    - &BGLight              '#201B2D' # HSV (230   , 25.71, 27.45)
+    - &BGDark               '#13111B' # HSV (234.55, 25   , 17.25)
+    - &BGDarker             '#15121E' # HSV (234.55, 25   , 13   )
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
@@ -122,13 +123,13 @@ colors:
   progressBar.background: *PINK                                                 # Background color of the progress bar shown for long running operations
 
   # List & Trees
-  list.activeSelectionBackground: *SELECTION                                    # List/Tree background color for the selected item when the list/tree is active
+  list.activeSelectionBackground:  !alpha [*SELECTION, 60]                      # List/Tree background color for the selected item when the list/tree is active
   list.activeSelectionForeground: *FG                                           # List/Tree foreground color for the selected item when the list/tree is active
   list.dropBackground: *SELECTION                                               # List/Tree drag and drop background when moving items around using the mouse
   list.focusBackground: *LineHighlight                                          # List/Tree background color for the focused item when the list/tree is active
   list.highlightForeground: *CYAN                                               # List/Tree foreground color of the match highlights when searching inside the list/tree
-  list.hoverBackground: *LineHighlight                                          # List/Tree background when hovering over items using the mouse
-  list.inactiveSelectionBackground: *LineHighlight                              # List/Tree background color for the selected item when the list/tree is inactive
+  list.hoverBackground:  !alpha [*SELECTION, 65]                                # List/Tree background when hovering over items using the mouse
+  list.inactiveSelectionBackground:  !alpha [*SELECTION, 40]                    # List/Tree background color for the selected item when the list/tree is inactive
   list.inactiveSelectionForeground:                                             # List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not
   list.warningForeground: *ORANGE                                               # Color of warning decorations in the explorer
   list.errorForeground: *RED                                                    # Color of error decorations in the explorer
@@ -142,13 +143,13 @@ colors:
   activityBar.foreground: *FG                                                   # Activity bar foreground color (for example used for the icons)
   activityBar.border:                                                           # Activity Bar border color with the Side Bar
   activityBar.activeBorder: !alpha [*PINK, 80]                                  # Activity Bar indicator color
-  activityBar.activeBackground: !alpha [*FG, 10]                            # Activity Bar indicator background color
+  activityBar.activeBackground: !alpha [*SELECTION, 40]                            # Activity Bar indicator background color
   activityBarBadge.background: *PINK                                            # Activity notification badge background color
-  activityBarBadge.foreground: *FG                                              # Activity notification badge foreground color
+  activityBarBadge.foreground: *BG                                              # Activity notification badge foreground color
 
   # Side Bar
   sideBar.background: *BGDark                                                   # Side Bar background color
-  sideBar.foreground:                                                          # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
+  sideBar.foreground:                                                           # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
   sideBar.border:                                                               # Side Bar border color on the side separating the editor
   sideBarTitle.foreground: *FG                                                  # Side Bar title foreground color
   sideBarSectionHeader.background: *BG                                          # Side Bar section header background color
@@ -157,7 +158,7 @@ colors:
 
   # Editor Group & Tabs
   editorGroup.background:                                                       # Background color of an editor group. The background color shows up when dragging editor groups around
-  editorGroup.border: *PURPLE                                                   # Color to separate multiple editor groups from each other
+  editorGroup.border: *SELECTION                                                # Color to separate multiple editor groups from each other
   editorGroup.dropBackground: *TAB_DROP_BG                                      # Background color when dragging editors around
   editorGroupHeader.noTabsBackground:                                           # Background color of the editor group title header when Tabs are disabled
   editorGroupHeader.tabsBackground: *BGDarker                                   # Background color of the Tabs container
@@ -193,8 +194,8 @@ colors:
 
   editor.hoverHighlightBackground: *BGDarker                                    # Highlight below the word for which a hover is shown
 
-  editor.lineHighlightBackground:                                               # Background color for the highlight of line at the cursor position
-  editor.lineHighlightBorder: *SELECTION                                        # Background color for the border around the line at the cursor position
+  editor.lineHighlightBackground: !alpha [ *BGLight, 85 ]                       # Background color for the highlight of line at the cursor position
+  editor.lineHighlightBorder: *BG                                               # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *CYAN                                            # Color of active links
   editor.rangeHighlightBackground: !alpha [ *PURPLE, 15 ]                       # Background color of highlighted ranges, like by Quick Open and Find features
@@ -299,10 +300,10 @@ colors:
 
   # Panel Colors
   panel.background: *BG                                                         # Panel background color
-  panel.border: *PURPLE                                                         # Panel border color on the top separating to the editor
+  panel.border: *SELECTION                                                         # Panel border color on the top separating to the editor
   panelTitle.activeBorder: *PINK                                                # Border color for the active panel title
   panelTitle.activeForeground: *FG                                              # Title color for the active panel
-  panelTitle.inactiveForeground: *COMMENT                                       # Title color for the inactive panel
+  panelTitle.inactiveForeground: !alpha [*FG, 80]                                       # Title color for the inactive panel
 
   # Status Bar Colors
   statusBar.background: *BGDarker                                               # Standard Status Bar background color
