@@ -18,22 +18,22 @@ omni:
     - &RED                  '#E96379'
     - &YELLOW               '#e7de79'
   ansi:
-    - &COLOR0               '#191622'
-    - &COLOR1               '#FF5555'
-    - &COLOR2               '#50FA7B'
-    - &COLOR3               '#F1FA8C'
-    - &COLOR4               '#BD93F9'
-    - &COLOR5               '#FF79C6'
-    - &COLOR6               '#8BE9FD'
-    - &COLOR7               '#F8F8F2'
-    - &COLOR8               '#6272A4'
-    - &COLOR9               '#FF6E6E'
-    - &COLOR10              '#69FF94'
-    - &COLOR11              '#FFFFA5'
-    - &COLOR12              '#D6ACFF'
-    - &COLOR13              '#FF92DF'
+    - &COLOR0               '#201B2D'
+    - &COLOR1               '#FF79C6'
+    - &COLOR2               '#e7de79'
+    - &COLOR3               '#67e480'
+    - &COLOR4               '#78D1E1'
+    - &COLOR5               '#988bc7'
+    - &COLOR6               '#A1EFE4'
+    - &COLOR7               '#E1E1E6'
+    - &COLOR8               '#626483'
+    - &COLOR9               '#ed4556'
+    - &COLOR10              '#e7de79'
+    - &COLOR11              '#00F769'
+    - &COLOR12              '#78D1E1'
+    - &COLOR13              '#988bc7'
     - &COLOR14              '#A4FFFF'
-    - &COLOR15              '#FFFFFF'
+    - &COLOR15              '#F7F7FB'
   brightOther:
     # Temporary (awaiting fix)
     - &TEMP_QUOTES          '#e7de79'
@@ -44,7 +44,7 @@ omni:
     - &WHITE                '#E1E1E6'
     - &TAB_DROP_BG          '#44475A70'
     # UI Variants
-    - &BGLighter            '#202024'
+    - &BGLighter            '#252131'
     - &BGLight              '#201B2D' # HSV (230   , 25.71, 27.45)
     - &BGDark               '#13111B' # HSV (234.55, 25   , 17.25)
     - &BGDarker             '#15121E' # HSV (234.55, 25   , 13   )
@@ -71,6 +71,9 @@ colors:
   terminal.ansiMagenta: *COLOR5
   terminal.ansiCyan: *COLOR6
   terminal.ansiWhite: *COLOR7
+  terminal.selectionBackground: !alpha [*COMMENT, 45]
+  terminalCursor.background: *COLOR0
+  terminalCursor.foreground: *FG
 
   # Contrast Colors
   contrastBorder: *BGDarker                                                     # An extra border around elements to separate them from others for greater contrast
@@ -194,7 +197,7 @@ colors:
 
   editor.hoverHighlightBackground: *BGDarker                                    # Highlight below the word for which a hover is shown
 
-  editor.lineHighlightBackground: *BGLight                       # Background color for the highlight of line at the cursor position
+  editor.lineHighlightBackground: *BGLight                                      # Background color for the highlight of line at the cursor position
   editor.lineHighlightBorder: *BG                                               # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *CYAN                                            # Color of active links
