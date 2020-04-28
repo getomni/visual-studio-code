@@ -1,6 +1,6 @@
 {
     "name": "theme-omni",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "displayName": "Omni",
     "homepage": "https://rocketseat.com.br/",
     "description": "A dark theme made by Rocketseat",
@@ -14,7 +14,8 @@
         "vsce-publish": "vsce publish"
     },
     "maintainers": [
-        "Diego Fernandes <diego.schell.fgmail.com>"
+        "Diego Fernandes <diego.schell.fgmail.com>",
+        "Luke Morales <lukemorales@live.com>"
     ],
     "repository": {
         "type": "git",

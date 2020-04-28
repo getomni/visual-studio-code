@@ -194,7 +194,7 @@ colors:
 
   editor.hoverHighlightBackground: *BGDarker                                    # Highlight below the word for which a hover is shown
 
-  editor.lineHighlightBackground: !alpha [ *BGLight, 85 ]                       # Background color for the highlight of line at the cursor position
+  editor.lineHighlightBackground: *BGLight                       # Background color for the highlight of line at the cursor position
   editor.lineHighlightBorder: *BG                                               # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *CYAN                                            # Color of active links
@@ -300,7 +300,7 @@ colors:
 
   # Panel Colors
   panel.background: *BG                                                         # Panel background color
-  panel.border: *SELECTION                                                         # Panel border color on the top separating to the editor
+  panel.border: *PINK                                                         # Panel border color on the top separating to the editor
   panelTitle.activeBorder: *PINK                                                # Border color for the active panel title
   panelTitle.activeForeground: *FG                                              # Title color for the active panel
   panelTitle.inactiveForeground: !alpha [*FG, 80]                                       # Title color for the inactive panel
