@@ -19,10 +19,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/rocketseat/omni-vscode.git"
+        "url": "https://github.com/getomni/vscode-omni.git"
     },
     "bugs": {
-        "url": "https://github.com/rocketseat/omni-vscode/issues"
+        "url": "https://github.com/getomni/vscode-omni/issues"
     },
     "engines": {
         "vscode": "^1.13.0"
