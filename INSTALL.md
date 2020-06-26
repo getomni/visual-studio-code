@@ -11,7 +11,7 @@
 
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
 
-    $ git clone https://github.com/rocketseat/omni-vscode.git ~/.vscode/extensions/theme-omni
+    $ git clone https://github.com/getomni/vscode-omni.git ~/.vscode/extensions/theme-omni
     $ cd ~/.vscode/extensions/theme-omni
     $ npm install
     $ npm run build
