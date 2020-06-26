@@ -9,7 +9,7 @@ omni:
     - &BG                   '#191622'
     - &FG                   '#E1E1E6'
     - &SELECTION            '#41414D'
-    - &COMMENT              '#483C67'
+    - &COMMENT              '#5A4B81'
     - &CYAN                 '#988bc7'
     - &GREEN                '#67e480'
     - &ORANGE               '#E89E64'
