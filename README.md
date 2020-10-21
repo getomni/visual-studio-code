@@ -1,24 +1,43 @@
 <h1 align="center">
-<img src="./icon.png" alt="Omni"><br />
-Omni
+  <br>
+  <img src="https://storage.googleapis.com/golden-wind/github/omni/omni.png" alt="Omni Logo" width="100">
+  <br>
+  Omni for <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+  <br>
 </h1>
 
 <p align="center">
-Just a preview.
-<img src="https://i.imgur.com/vUQNEXV.png" alt="preview"/></p>
+  <strong>Dark theme for Visual Studio Code</strong>
+</p>
 
-# Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/PRs-welcome-%235FCC6F.svg" alt="PRs welcome!" />
 
-A dark theme from Visual Studio Code
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%235FCC6F">
+</p>
 
-- [How to install?](INSTALL.md)
-- [I need a help](#need-help)
-- [License](#license)
+<p align="center">
+  <a href="#install">Install</a> •
+  <a href="#team">Team</a> •
+  <a href="#license">License</a>
+</p>
 
-# Need help
+<p align="center">
+  <img alt="Omni screnshoot for Visual Studio Code" src="https://i.imgur.com/vUQNEXV.png">
+</p>
 
-If you need help with Omni, feel free to open an issue with a description of the problem you're facing. Or, if you prefer, you can chat with us on our [Discord Community](https://discordapp.com/invite/gCRAFhc).
+## Install
 
-# License
+All instructions can be found at [INSTALL.md](./INSTALL.md).
 
-MIT © [Omni Theme](https://github.com/getomni)
+## Team
+
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/getomni/visual-studio-code/graphs/contributors).
+
+| [![Diego Fernandes](https://github.com/diego3g.png?size=100)](https://github.com/diego3g) | [![Luke Morales](https://github.com/lukemorales.png?size=100)](https://github.com/lukemorales) |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [Diego Fernandes](https://github.com/diego3g)                                             | [Luke Morales](https://github.com/lukemorales)                                                 |
+
+## License
+
+[MIT License](./LICENSE.md)
