@@ -671,6 +671,13 @@ tokenColors:
     settings:
       foreground: *PINK
 
+  - name: CSS ID
+    scope:
+    - entity.other.attribute-name.id
+    settings:
+      foreground: *YELLOW
+      fontStyle: italic
+
   - name: HTML/CSS attribute names
     scope:
     - entity.other.attribute-name
