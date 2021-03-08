@@ -685,6 +685,12 @@ tokenColors:
       foreground: *GREEN
       fontStyle: italic
 
+  - name: Tag inline source
+    scope:
+    - meta.tag.inline source
+    settings:
+      foreground: *YELLOW
+
 # =============================================================================
 # Functions/Methods
 # =============================================================================
