@@ -34,7 +34,7 @@ All instructions can be found at [INSTALL.md](./INSTALL.md).
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/getomni/visual-studio-code/graphs/contributors).
 
-| [![Diego Fernandes](https://github.com/diego3g.png?size=100)](https://github.com/diego3g) | [![Luke Morales](https://github.com/lukemorales.png?size=100)](https://github.com/lukemorales) | [![João Pedro Schmitz](https://github.com/jpedroschmitz.png?size=100)](https://github.com/lukemorales) |
+| [![Diego Fernandes](https://github.com/diego3g.png?size=100)](https://github.com/diego3g) | [![Luke Morales](https://github.com/lukemorales.png?size=100)](https://github.com/lukemorales) | [![João Pedro Schmitz](https://github.com/jpedroschmitz.png?size=100)](https://github.com/jpedroschmitz) |
 | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [Diego Fernandes](https://github.com/diego3g)                                             | [Luke Morales](https://github.com/lukemorales)                                                 | [João Pedro](https://github.com/jpedroschmitz)                                                         |
 
