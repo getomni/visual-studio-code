@@ -5,6 +5,7 @@ maintainers:
   - Luke Morales <lukemorales@live.com>
   - João Pedro Schmitz <hey@joaopedro.dev>
 semanticClass: theme.omni
+semanticHighlighting: true
 omni:
   base:
     - &BG                   '#191622'
