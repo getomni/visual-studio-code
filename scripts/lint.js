@@ -1,7 +1,7 @@
 const https = require('https');
 
 const generate = require('./generate');
-const { THEME_COLOR_REFERENCE_URL, NOT_THEME_KEYS } = require('../constants')
+const { THEME_COLOR_REFERENCE_URL, NOT_THEME_KEYS } = require('../constants');
 
 const get = url =>
     new Promise((resolve, reject) => {
