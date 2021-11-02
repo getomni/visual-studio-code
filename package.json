@@ -1,9 +1,9 @@
 {
     "name": "theme-omni",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "displayName": "Omni Theme",
-    "homepage": "https://rocketseat.com.br/",
-    "description": "A dark theme made by Rocketseat",
+    "homepage": "https://github.com/getomni/omni",
+    "description": "Dark theme created by Rocketseat 🚀",
     "publisher": "rocketseat",
     "license": "MIT",
     "scripts": {
